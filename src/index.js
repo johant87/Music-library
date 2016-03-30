@@ -1,5 +1,15 @@
+import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
 import React from 'react';
-import { render } from 'react-dom';
-import { App } from './App';
+import ReactDOM from 'react-dom';
+import App from './App';
+import PageNotFound from './PageNotFound';
 
-render(<App />, document.getElementById('root'));
+
+
+ReactDOM.render((
+<Router history={browserHistory}>
+  <Route path="/" component={App}>
+      <Route path="*" component={PageNotFound}/>
+    </Route>
+  </Router>
+), document.getElementById('root'));
