@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import jQuery from 'jquery';
+import MusicPlayer from './Music-player';
 import './stylesheets/components.scss';
 
 
@@ -28,11 +29,13 @@ class App extends React.Component {
         </div>
       </nav>
         <div className="jumbotron">
-          <h1>When spotify is to expensive</h1>
-          <p>Login and create your own!</p>
+          <div className="container">
+            <h1>When spotify is to expensive</h1>
+            <p>Login and create your own!</p>
+          </div>
         </div>
           <div className="container">
-            <h1>Latest additions</h1>
+            <h1>Spotlight</h1>
             <div className="row">
               <div className="col-md-3">
                 <div className="panel panel-default">
@@ -141,7 +144,7 @@ class App extends React.Component {
                   </div>
               </div>
           </div>
-
+          <MusicPlayer />
       </div>
       );
   }

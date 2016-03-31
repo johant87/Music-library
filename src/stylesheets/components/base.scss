@@ -1,4 +1,11 @@
 body {
-background-color: white;
+background-color: #F0EFF0;
 color: black;
+}
+
+$title-font: 300 24px/1.5 'Open Sans', sans-serif;
+
+
+h1{
+  font:$title-font;
 }
