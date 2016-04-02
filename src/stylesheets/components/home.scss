@@ -24,27 +24,77 @@ background-position: 50% 0%!important;
    opacity: .9;
  }
 
-   h1 {
-    margin-top:350px;
-    font:$title-font;
-    font-size: 36px;
-    z-index: 999;
-    color: white;
-  }
+
 
   p {
     font-size: 24px;
     font:$title-font;
   }
 }
+.title-jumbotron {
+  top: 320px;
+  left: 150px;
+  position: absolute;
+  z-index: 999;
+  color: #EEEEED;
+  font:$title-font;
+  font-size: 42px;
+  color: #EEEEED;
+  position: absolute;
+}
+@media only screen and (max-width: 600px) {
+  .title-jumbotron {
+    font:$title-font-h1-mobile;
+		left: 40px;
+  }
+}
 
 button {
-  background: white;
+  background: #f1312e;
+	border: 3px solid #f1312e;
+	color: #EEEEED;
+	border-radius: 2px;
+	padding: 4px 10px;
+}
+button:hover {
+  background: #f45523;
+	border: 3px solid #f45523;
+	color: #EEEEED;
 }
 
 .music1 {
-  background-image: url('http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg');
-  background-size: 211px 223px;
+  background-image: url('http://johanvandentillaart.nl/music-library/charlie.jpg');
+  background-size: 100% 100%;
+	min-height: 300px;
+	padding-top:50px;
+
+  h2 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+
+}
+.music2 {
+  background-image: url('http://johanvandentillaart.nl/music-library/peachy.jpg');
+  background-size: 100% 100%;
+	min-height: 300px;
+	padding-top:50px;
+
+  h2 {
+    color: white;
+  }
+  h3 {
+    color: white;
+  }
+
+}
+.music3 {
+  background-image: url('http://johanvandentillaart.nl/music-library/panda.jpg');
+  background-size: 100% 100%;
+	min-height: 300px;
+	padding-top:50px;
 
   h2 {
     color: white;

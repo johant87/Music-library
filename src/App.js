@@ -14,7 +14,10 @@ const {
     PrevIconSVG
 } = Icons;
 const clientId = 'd47f81af8d5685d61f323bb6a2c5e81c';
-const resolveUrl = 'https://soundcloud.com/stepan-i-meduza-official/dolgo-obyasnyat';
+const resolveUrl = 'https://soundcloud.com/charlieputh/marvin-gaye-ft-meghan-trainor';
+const resolveUrl2 = 'https://soundcloud.com/peachiness/stressed-out';
+const resolveUrl3 = 'https://soundcloud.com/lifeofdesiigner/desiigner-panda';
+const resolveUrl4 = 'https://soundcloud.com/lifeofdesiigner/desiigner-panda';
 class CustomPlayer extends React.Component {
     play() {
         let { soundCloudAudio, playing } = this.props;
@@ -64,21 +67,22 @@ playSong() {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <Link to="/" className="navbar-brand" href="#">Ownify</Link>
+            <Link to="/" className="navbar-brand" href="#"><i className="fa fa-music margin-right"></i> Ownify</Link>
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           </div>
         </div>
       </nav>
+      <h1 className="title-jumbotron">Spotify is to expensive, just<br></br> login and create your own!</h1>
         <div className="jumbotron">
           <div className="container">
-            <h1>Spotify is to expensive just<br></br> login and create your own!</h1>
+
           </div>
         </div>
           <div className="container">
             <h1>Spotlight</h1>
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-4">
                 <div className="panel panel-default">
                     <div className="panel-body music1">
                     <SoundPlayerContainer resolveUrl={resolveUrl} clientId={clientId}>
@@ -87,61 +91,30 @@ playSong() {
                     </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4">
                 <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive"></img>
-                    </div>
-                    <div className="panel-body">
-                      The Beatles
+                    <div className="panel-body music2">
+                    <SoundPlayerContainer resolveUrl={resolveUrl2} clientId={clientId}>
+                        <CustomPlayer />
+                    </SoundPlayerContainer>
                     </div>
                 </div>
               </div>
-              <div className="col-md-3">
+              <div className="col-md-4">
                 <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive"></img>
-                    </div>
-                    <div className="panel-body">
-                      The Beatles
+                    <div className="panel-body music3">
+                    <SoundPlayerContainer resolveUrl={resolveUrl3} clientId={clientId}>
+                        <CustomPlayer />
+                    </SoundPlayerContainer>
                     </div>
                 </div>
               </div>
-              <div className="col-md-3">
-                <div className="panel panel-default">
-                    <div className="panel-heading">
-                      <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive"></img>
-                    </div>
-                    <div className="panel-body">
-                      The Beatles
-                    </div>
-                </div>
-              </div>
+
+
             </div>
           </div>
 
-          <div className="container">
-              <div className="row">
-                  <div className="col-md-12">
-                    <h1>What is Ownify</h1>
-                    <p>blablablablalblablalblablalblablalblablal</p>
-                  </div>
-              </div>
-              <div className="row">
-                  <div className="col-md-4 text-center">
-                  <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive img-circle"></img>
-                    <p>blablablablalblablalblablalblablalblablal</p>
-                  </div>
-                  <div className="col-md-4 text-center">
-                  <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive img-circle"></img>
-                    <p>blablablablalblablalblablalblablalblablal</p>
-                  </div>
-                  <div className="col-md-4 text-center">
-                  <img src="http://1.bp.blogspot.com/-WyfkhMYPXO0/Ud25_Exg6DI/AAAAAAAASVQ/oVuASmn1p7Q/s1600/the-beatles-abbey-road-album-cover.jpg" className="img-responsive img-circle"></img>
-                    <p>blablablablalblablalblablalblablalblablal</p>
-                  </div>
-              </div>
-          </div>
+
       </div>
       );
   }
